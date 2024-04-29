@@ -1,0 +1,35 @@
+<!DOCTYPE htnl>
+<html>
+    <head>
+        <link rel="stylesheet" href="IT-3.css">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+            <a href="" class="logo">caffee</a>
+            <button class="button" onclick="toggleDarkMode()">Dark Mode</button>
+        </header>
+        <div>
+            <img src="/images.jpeg" alt="this picture not found" width="500" height="500">
+            <p><h1>hot chocolate</h1></p>
+        </div>
+        <p><h3>When the next polar vortex blows into town, pick one version of this hot drink recipe to warm your bones each day of the week. Start with a rich base of half-and-half,
+            cream, vanilla, and chopped bittersweet chocolate. Then work your way through the flavor options, including peanut butter, espresso, almond, and raspberry.</h3></p>
+            
+            <script>
+                function toggleDarkMode() {
+                    var body = document.body;
+                    var button = document.querySelector('.button');
+            
+                    body.classList.toggle('dark-mode');
+            
+                    if (body.classList.contains('dark-mode')) {
+                        button.textContent = 'White Mode';
+                    } else {
+                        button.textContent = 'Dark Mode';
+                    }
+                }
+            </script>
+    </body>
+</html>
