@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Product Purchase Page</title>
+      <link rel="stylesheet" href="stylespage3.css">
+  </head>
+<body>
+    <header><div class="logo">
+        <h1>Desserts</h1>
+      </div>
+      <button class="button" onclick="toggleDarkMode()">White Mode</button>
+    </header>
+    <div class="container">
+      <div class="title">
+        <h2>Macron</h2>
+      </div>
+        <img class="image" src="Macron.jpg" alt="Product Image">
+      <div class="description">
+        <p>Macarons are considered one of the French desserts that are known all over the world.
+          They are a light dessert served with a cup of coffee. This dessert is distinguished by its varied colors and delicious taste.
+          In addition, macarons are served on birthdays, weddings, and various occasions.
+        </p>
+      </div>
+        <div class="quantity">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" value="1" min="1">
+        </div>
+        <button class="btn">Buy</button>
+        
+      </div>
+      <script>
+        function toggleDarkMode() {
+          var container = document.querySelector('.container');
+          var button = document.querySelector('.button');
+          
+          container.classList.toggle('dark-mode');
+
+          if (container.classList.contains('dark-mode')) {
+            button.textContent = 'Dark Mode';
+          } else {
+            button.textContent = 'White Mode';
+          }
+        }
+      </script>
+    
+  </body>
+</html>
