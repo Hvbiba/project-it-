@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"rossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="sheetstyle.css">
+    <!--font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>coffee section</title>
+</head>
+<body>
+  <div id="coffeePage1">
+    <nav>
+        <div id="headLine">
+            <h3>Our<span> Coffee </span>Section</h3>
+            <i class="fa fa-moon-o" aria-hidden="true" id="mode"></i>
+        </div>
+        <div class="container" id="menu">
+            <div class="card" style="width: 18rem;">
+                <img src="coffee3.jpg" alt="coffee item">
+                <div class="card-body">
+                    <p class="card-text">Get your daily cup of coffee now!</p>
+                </div>
+                <li class="list-group-item">Price: 10$</li>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="coffee5.jpg" alt="coffee item">
+                <div class="card-body">
+                    <p class="card-text">Get your daily cup of coffee now!</p>
+                </div>
+                <li class="list-group-item">Price: 5$</li>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="coffee4.jpg" alt="coffee item">
+                <div class="card-body">
+                    <p class="card-text">Get your daily cup of coffee now!</p>
+                </div>
+                <li class="list-group-item">Price: 8$</li>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="coffeeitem.jpg" alt="coffee item">
+                <div class="card-body">
+                    <p class="card-text">Get your daily cup of coffee now!</p>
+                </div>
+                <li class="list-group-item">Price: 20$</li>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="coffee8.jpg" alt="coffee item">
+                <div class="card-body">
+                    <p class="card-text">Get your daily cup of coffee now!</p>
+                </div>
+                <li class="list-group-item">Price: 10$</li>
+            </div>
+        </div>
+        <div class="container" id="menu">
+            <div class="about">
+                <p> Check our offer now! <br>50% Off<br>for today and for <br>your first order from us</p>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="coffee1.jpg" alt="coffee item">
+                <div class="card-body">
+                    <p class="card-text">Share your daily cup of coffee now!</p>
+                </div>
+                <li class="list-group-item">Price: 30$</li>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="cooki1.jpg" alt="coffee item">
+                <div class="card-body">
+                    <p class="card-text">Get your daily cup of coffee now!</p>
+                </div>
+                <li class="list-group-item">Price: 10$</li>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="coffee4.jpg" alt="coffee item">
+                <div class="card-body">
+                    <p class="card-text">Get your daily cup of coffee now!</p>
+                </div>
+                <li class="list-group-item">Price: 10$</li>
+            </div>
+        </div>
+        <div id="offerbox" class="container">
+            <div class="promo">
+                <div>
+                    <h2>Check our promo<br>today!</h2>
+                    <p> Let's see the deals and pick yours</p><br>
+                </div>
+                <button>PROMO CODE.</button>
+            </div>
+        </div>
+    </nav>
+</div>
+<!--ja code for dark and light mode-->
+<script>
+            const toggle = document.getElementById('mode');
+            let background=document.getElementById('coffeePage1');
+            let head=document.querySelector('#headLine h3');
+            let offerBox = document.querySelector('.about');
+            let promoBox = document.querySelector('.promo');
+            let btn= document.querySelector('.promo button');
+            toggle.addEventListener('click',function(){
+                head.classList.toggle('darkmode');
+                background.classList.toggle('background');
+                promoBox.classList.toggle('offer');
+                offerBox.classList.toggle('offer');
+                btn.classList.toggle('btnn');
+                word.classList.toggle('spanWord');
+            });
+</script>
+</body>
+</html>
